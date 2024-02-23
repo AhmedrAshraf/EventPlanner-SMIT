@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbarContainer {
+  position: fixed;
+}
+#firstHead {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+}
+#secondHead {
+  display: flex;
+  padding: 10px 20%;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+}
+#banner {
+  width: 100vw;
+  height: 500px;
+  margin-top: 70px;
+}
+#infoBox {
+  text-align: center;
+  padding: 30px;
+}
+#infoBox p {
+  padding: 10px 20%;
+}
+.flagsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.flagsRow img {
+  height: 3.5vw;
+}
+.cardsRow {
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cardContainer {
+  border: 1px solid gray;
+  background-color: white;
+  height: 22vw;
+  width: 22vw;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.cardContainer img {
+  height: 90%;
+  width: 90%;
+  object-fit: contain;
+}
+.coloredCardsBox {
+  padding-bottom: 60px;
+  background-color: #fff2f3;
+}
+.marginNon {
+  margin: 0;
+}
+
+.footer {
+  width: 100vw;
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgb(56, 41, 41);
+}
+.sendButton {
+  position: absolute;
+  background-color: wheat;
+}
+
+/* styleSheet for small screen (mobile) */
+@media screen and (max-width: 500px) {
+  /* navbar resonsive */
+  #firstHead {
+    padding: 0;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  #secondHead {
+    font-size: 12px;
+    padding: 2px 5px;
+    justify-content: space-between;
+  }
+  /* silder resonsive */
+  #banner {
+    width: 100vw;
+    height: 180px;
+    margin-top: 60px;
+  }
+
+  /* info box */
+  #infoBox {
+    padding: 30px 10px 10px 10px; /* top right bottom left */
+  }
+  #infoBox h1 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #infoBox p {
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .flagsRow img {
+    height: 5vw;
+  }
+
+  /* cards row */
+  .cardsRow {
+    margin: 30px auto;
+  }
+  .cardContainer {
+    height: 30vw;
+    width: 30vw;
+    margin: 1vw;
+  }
+  .footer {
+    padding-top: 50px;
+  }
+}
